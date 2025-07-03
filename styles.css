@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo del documento */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(90deg, #1f1f1f, #3d3d3d);
+  color: #f39c12;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+nav a {
+  color: #f39c12;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Contenido principal */
+#contenido {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contenido p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #444;
+  font-style: italic;
+  text-align: center;
+}
+
+#contenido h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #222;
+  border-left: 5px solid #f39c12;
+  padding-left: 10px;
+}
+
+#contenido div {
+  text-align: justify;
+  font-size: 1.05em;
+}
+
+/* Galería */
+section {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+
+figure {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+figure img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+}
+
+/* Ubicación */
+h3 {
+  text-align: center;
+  margin-top: 40px;
+  color: #2c3e50;
+  font-size: 1.6em;
+  border-left: 5px solid #f39c12;
+  padding-left: 10px;
+}
+.mapa {
+ width: 80%;              /* Se adapta al ancho de la pantalla */
+  max-width: 600px;        /* Pero no pasa de 600px */
+  height: 350px;           /* Altura fija y agradable */
+  display: block;
+  margin: 30px auto;       /* Centrado con espacio superior/inferior */
+  border: none;            /* Sin borde feo */
+  border-radius: 12px;     /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  /* Sombra suave */
+}
